@@ -3,7 +3,7 @@ description: Request a new Community Room
 title: '[Community Room Request]: '
 labels: ['room request']
 assignees:
-  - jeremyckahn
+  - jscott
 body:
   - type: input
     id: room-url

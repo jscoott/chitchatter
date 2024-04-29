@@ -97,7 +97,7 @@ export const EmbedCodeDialog = ({
         >
           As an alternative to using an <code>iframe</code>, you can use the{' '}
           <Link
-            href="https://github.com/jeremyckahn/chitchatter#SDK"
+            href="https://github.com/jscott/chitchatter#SDK"
             target="_blank"
           >
             Chitchatter SDK

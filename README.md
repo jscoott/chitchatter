@@ -17,11 +17,11 @@ Chitchatter is a free (as in both price and freedom) communication tool. Designe
 - Embeddable
 - [Self-hostable](#self-hosting)
 
-Chitchatter uses [Vite](https://vitejs.dev/). The secure networking and streaming magic would not be possible without [Trystero](https://github.com/dmotz/trystero). File transfer functionality is powered by [`secure-file-transfer`](https://github.com/jeremyckahn/secure-file-transfer).
+Chitchatter uses [Vite](https://vitejs.dev/). The secure networking and streaming magic would not be possible without [Trystero](https://github.com/dmotz/trystero). File transfer functionality is powered by [`secure-file-transfer`](https://github.com/jscott/secure-file-transfer).
 
 ## Status
 
-- [![Known Vulnerabilities](https://snyk.io/test/github/jeremyckahn/chitchatter/badge.svg?targetFile=package.json)](https://snyk.io/test/github/jeremyckahn/chitchatter?targetFile=package.json)
+- [![Known Vulnerabilities](https://snyk.io/test/github/jscott/chitchatter/badge.svg?targetFile=package.json)](https://snyk.io/test/github/jscott/chitchatter?targetFile=package.json)
 
 ## How to use it
 
@@ -55,7 +55,7 @@ Open https://chitchatter.im/ and join a room to start chatting with anyone else 
 
 There is no shortage of user-friendly chat apps available, but they rely on a central service to facilitate communication. It is difficult to trust these central services, as commercial interests and [government pressure](https://www.npr.org/2022/08/12/1117092169/nebraska-cops-used-facebook-messages-to-investigate-an-alleged-illegal-abortion) can compel service operators to work against the best interest of the users. Even when user data is handled in good faith by service operators, the possibility remains that [encrypted data held at rest may be decrypted](https://www.cbsnews.com/news/fbi-may-have-found-way-to-unlock-san-bernardino-shooters-iphone/) against the user's will.
 
-Chitchatter designs around these risks with a [web meshe architecture](https://dev.to/jeremyckahn/taking-the-power-back-with-web-meshes-omg). There is no central service operator that stores or potentially mishandles communication data. Some services are required to establish an initial connection between peers, but otherwise the app uses direct peer-to-peer communication for everything. Any services that are used by Chitchatter have no association with the project and are publicly available for all to use.
+Chitchatter designs around these risks with a [web meshe architecture](https://dev.to/jscott/taking-the-power-back-with-web-meshes-omg). There is no central service operator that stores or potentially mishandles communication data. Some services are required to establish an initial connection between peers, but otherwise the app uses direct peer-to-peer communication for everything. Any services that are used by Chitchatter have no association with the project and are publicly available for all to use.
 
 ## Use cases
 
@@ -75,7 +75,7 @@ Chitchatter offers a private and secure solution for:
 
 ### 💻️ Project status
 
-I consider Chitchatter feature-complete inasmuch it does all the things I personally need it to do. I don't have specific plans to add significant functionality in the future, but I may do so if it seems fun to me at the time. **I am committed to fixing any significant bugs** that are reported, so please [open an issue](https://github.com/jeremyckahn/chitchatter/issues/new) if you discover one! Aside from that, Chitchatter is effectively in maintenance mode for the foreseeable future.
+I consider Chitchatter feature-complete inasmuch it does all the things I personally need it to do. I don't have specific plans to add significant functionality in the future, but I may do so if it seems fun to me at the time. **I am committed to fixing any significant bugs** that are reported, so please [open an issue](https://github.com/jscott/chitchatter/issues/new) if you discover one! Aside from that, Chitchatter is effectively in maintenance mode for the foreseeable future.
 
 If you would like a feature to be implemented and are willing to pay a development cost to ensure it gets done, please file a GitHub issue describing the feature and indicate that you are willing to compensate for the work. If you are not willing to pay, please open a GitHub issue regardless. I may implement it if it seems fun to do so, but other members of the community may also step up to implement it via Pull Requests.
 
@@ -85,13 +85,13 @@ If you don't agree with the direction of the project, you are welcome to fork Ch
 
 ### 🏗️ Support and custom development
 
-I'm willing to do paid installations and customizations of Chitchatter for your needs. If you'd like to contract me to make a version of Chitchatter that is custom built for you, please email me at jeremyckahn@gmail.com and let me know what you have in mind to get started.
+I'm willing to do paid installations and customizations of Chitchatter for your needs. If you'd like to contract me to make a version of Chitchatter that is custom built for you, please email me at jscott@gmail.com and let me know what you have in mind to get started.
 
 ---
 
 ## Veracity
 
-The core of Chitchatter's security model is the fact that it is fully open source. You are free (and encouraged) to fully audit the project source code and infrastructure. Not only is the source code available under the terms of the [GPL](./LICENSE), but [all build logs are publicly accessible](https://github.com/jeremyckahn/chitchatter/actions/workflows/pages/pages-build-deployment) as well.
+The core of Chitchatter's security model is the fact that it is fully open source. You are free (and encouraged) to fully audit the project source code and infrastructure. Not only is the source code available under the terms of the [GPL](./LICENSE), but [all build logs are publicly accessible](https://github.com/jscott/chitchatter/actions/workflows/pages/pages-build-deployment) as well.
 
 If you would like to verify that the app hosted at https://chitchatter.im/ is the one that is hosted on GitHub, you can use `dig`:
 
@@ -110,24 +110,24 @@ $ dig chitchatter.im
 ;chitchatter.im.                        IN      A
 
 ;; ANSWER SECTION:
-chitchatter.im.         231     IN      CNAME   jeremyckahn.github.io.
-jeremyckahn.github.io.  231     IN      A       185.199.111.153
-jeremyckahn.github.io.  231     IN      A       185.199.110.153
-jeremyckahn.github.io.  231     IN      A       185.199.109.153
-jeremyckahn.github.io.  231     IN      A       185.199.108.153
+chitchatter.im.         231     IN      CNAME   jscott.github.io.
+jscott.github.io.  231     IN      A       185.199.111.153
+jscott.github.io.  231     IN      A       185.199.110.153
+jscott.github.io.  231     IN      A       185.199.109.153
+jscott.github.io.  231     IN      A       185.199.108.153
 ```
 
-To examine the static assets that are served to end users, you can audit the [`gh-pages` branch](https://github.com/jeremyckahn/chitchatter/tree/gh-pages).
+To examine the static assets that are served to end users, you can audit the [`gh-pages` branch](https://github.com/jscott/chitchatter/tree/gh-pages).
 
 ## Project roadmap
 
-See the full ticket backlog [here](https://github.com/users/jeremyckahn/projects/1).
+See the full ticket backlog [here](https://github.com/users/jscott/projects/1).
 
 ## Environments
 
 - Production environment: https://chitchatter.im/
   - Mirror: https://chitchatter.vercel.app/ (note that peers cannot connect across domains)
-- Staging: https://chitchatter-git-develop-jeremyckahn.vercel.app/
+- Staging: https://chitchatter-git-develop-jscott.vercel.app/
 
 ## SDK
 
@@ -195,7 +195,7 @@ The build is minified and the filenames include the hashes.
 
 ### Self-hosting
 
-Chitchatter is designed to be forked and self-hosted. If you would like to change pairing or relay server configuration, or you simply prefer to control your own builds and versions, just [fork this repo](https://github.com/jeremyckahn/chitchatter/fork) and follow the steps below.
+Chitchatter is designed to be forked and self-hosted. If you would like to change pairing or relay server configuration, or you simply prefer to control your own builds and versions, just [fork this repo](https://github.com/jscott/chitchatter/fork) and follow the steps below.
 
 #### Caveats
 
@@ -205,9 +205,9 @@ Chitchatter peer connections are bound to the instance's domain. So, a user of C
 
 Assuming you are hosting Chitchatter on [GitHub Pages](https://pages.github.com/):
 
-1. Change the [`homepage` property in `package.json`](https://github.com/jeremyckahn/chitchatter/blob/1ea67e2c3a45115e054ebfe3457f2c3572c6213b/package.json#L4) to whatever URL your Chitchatter instance will be hosted from. This will be something like `https://github_user_or_org_name.github.io/chitchatter/`.
-2. Define a [`DEPLOY_KEY` GitHub Action secret](https://github.com/jeremyckahn/chitchatter/blob/e2bac732cf1288f7b5d0bec151098f18e8b1d0d6/.github/workflows/deploy.yml#L28-L31) (at `https://github.com/github_user_or_org_name/chitchatter/settings/secrets/actions`). See the docs for [`peaceiris/actions-gh-pages`](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-set-ssh-private-key-deploy_key) for more information.
-3. If you're using GitHub Pages [without a custom domain](https://github.com/sitek94/vite-deploy-demo?tab=readme-ov-file#fix-assets-links), you'll need to define the repo name as the `base` property [in `vite.config.ts`](https://github.com/jeremyckahn/chitchatter/blob/df6d10868e12ad13036a44f959796f4da35adc28/vite.config.ts#L35-L38). Here's an example of how that might look:
+1. Change the [`homepage` property in `package.json`](https://github.com/jscott/chitchatter/blob/1ea67e2c3a45115e054ebfe3457f2c3572c6213b/package.json#L4) to whatever URL your Chitchatter instance will be hosted from. This will be something like `https://github_user_or_org_name.github.io/chitchatter/`.
+2. Define a [`DEPLOY_KEY` GitHub Action secret](https://github.com/jscott/chitchatter/blob/e2bac732cf1288f7b5d0bec151098f18e8b1d0d6/.github/workflows/deploy.yml#L28-L31) (at `https://github.com/github_user_or_org_name/chitchatter/settings/secrets/actions`). See the docs for [`peaceiris/actions-gh-pages`](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-set-ssh-private-key-deploy_key) for more information.
+3. If you're using GitHub Pages [without a custom domain](https://github.com/sitek94/vite-deploy-demo?tab=readme-ov-file#fix-assets-links), you'll need to define the repo name as the `base` property [in `vite.config.ts`](https://github.com/jscott/chitchatter/blob/df6d10868e12ad13036a44f959796f4da35adc28/vite.config.ts#L35-L38). Here's an example of how that might look:
 
 ```js
 const config = () => {
@@ -234,7 +234,7 @@ Explore the files in `src/config` to modify pairing and relay server configurati
 
 ### Troubleshooting
 
-If you run into any issues with a custom Chitchatter installation, first ensure that you are using [the latest version of the code](https://github.com/jeremyckahn/chitchatter/tree/main). If you are hosting your installation with GitHub Pages, sync your `main` branch and _not_ your `gh-pages` branch. Updating your `main` branch will trigger a proper rebuild of your `gh-pages` branch.
+If you run into any issues with a custom Chitchatter installation, first ensure that you are using [the latest version of the code](https://github.com/jscott/chitchatter/tree/main). If you are hosting your installation with GitHub Pages, sync your `main` branch and _not_ your `gh-pages` branch. Updating your `main` branch will trigger a proper rebuild of your `gh-pages` branch.
 
 - https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork
 
@@ -252,17 +252,17 @@ Chitchatter works on iOS Safari, but browser-level bugs often prevent peers from
 
 ##### Issues specific to Firefox
 
-Per [#36](https://github.com/jeremyckahn/chitchatter/issues/36), check your `about:config` settings and ensure that `media.peerconnection.enabled` is **enabled**.
+Per [#36](https://github.com/jscott/chitchatter/issues/36), check your `about:config` settings and ensure that `media.peerconnection.enabled` is **enabled**.
 
 ##### Security
 
-Chitchatter undergoes [weekly security audits](https://github.com/jeremyckahn/chitchatter/blob/develop/.github/workflows/security.yml) to identify and address potential vulnerabilities. Reports from all audits can be found in [**Issues**](https://github.com/jeremyckahn/chitchatter/issues?q=%22Security+Report+-+%22).
+Chitchatter undergoes [weekly security audits](https://github.com/jscott/chitchatter/blob/develop/.github/workflows/security.yml) to identify and address potential vulnerabilities. Reports from all audits can be found in [**Issues**](https://github.com/jscott/chitchatter/issues?q=%22Security+Report+-+%22).
 
 ### Contributors
 
 <p align="center">
-<a href="https://github.com/jeremyckahn/chitchatter/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jeremyckahn/chitchatter" />
+<a href="https://github.com/jscott/chitchatter/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=jscott/chitchatter" />
 </a>
 </p>
 

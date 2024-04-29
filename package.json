@@ -2,7 +2,7 @@
   "name": "chitchatter",
   "version": "0.0.0",
   "homepage": "https://chitchatter.im/",
-  "author": "Jeremy Kahn <me@jeremyckahn.com>",
+  "author": "James Scott <me@jscott.com>",
   "license": "GPL-2.0-or-later",
   "type": "module",
   "dependencies": {

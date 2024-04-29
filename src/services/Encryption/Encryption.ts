@@ -1,7 +1,7 @@
 // NOTE: Much of what's here is derived from various ChatGPT responses:
 //
-//  - https://gist.github.com/jeremyckahn/cbb6107e7de6c83b620960a19266055e
-//  - https://gist.github.com/jeremyckahn/c49ca17a849ecf35c5f957ffde956cf4
+//  - https://gist.github.com/jscott/cbb6107e7de6c83b620960a19266055e
+//  - https://gist.github.com/jscott/c49ca17a849ecf35c5f957ffde956cf4
 
 export enum AllowedKeyType {
   PUBLIC,

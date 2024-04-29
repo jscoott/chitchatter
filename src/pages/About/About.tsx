@@ -41,7 +41,7 @@ export const About = () => {
         {`
 ### User Guide
 
-Chitchatter is a communication tool designed to make secure and private communication accessible to all. Please [see the README](https://github.com/jeremyckahn/chitchatter/blob/develop/README.md) for full project documentation.
+Chitchatter is a communication tool designed to make secure and private communication accessible to all. Please [see the README](https://github.com/jscott/chitchatter/blob/develop/README.md) for full project documentation.
 
 #### Chat rooms
 
@@ -59,7 +59,7 @@ All public and private keys are generated locally. Your private key is never sen
 
 ##### Community rooms
 
-There is [a public list of community rooms](https://github.com/jeremyckahn/chitchatter/wiki/Chitchatter-Community-Rooms) that you can join to discuss various topics.
+There is [a public list of community rooms](https://github.com/jscott/chitchatter/wiki/Chitchatter-Community-Rooms) that you can join to discuss various topics.
 
 ##### Conversation backfilling
 

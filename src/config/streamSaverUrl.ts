@@ -5,4 +5,4 @@ export const streamSaverUrl =
   // string to its respective .mitm.html URL.
   //
   // See: https://github.com/jimmywarting/StreamSaver.js?#configuration
-  'https://jeremyckahn.github.io/StreamSaver.js/mitm.html'
+  'https://jscott.github.io/StreamSaver.js/mitm.html'
